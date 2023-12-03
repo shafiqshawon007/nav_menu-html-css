@@ -1,0 +1,113 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.nav_menu {
+  background-image: url(digitel1.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+.btn_one {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.3 linear;
+}
+.side_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  transition: all 0.3 linear;
+}
+.side_menu .logo {
+  position: absolute;
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.side_menu .logo a {
+  margin-bottom: 5px;
+  position: absolute;
+  left: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.side_menu .logo a:hover {
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+.side_menu .btn_two i {
+  color: grey;
+  font-size: 25px;
+  font-weight: 700;
+  position: absolute;
+  left: 250px;
+  opacity: 0;
+  line-height: 60px;
+  cursor: pointer;
+}
+.side_menu .menu {
+  position: absolute;
+  color: white;
+  width: 100%;
+  top: 80px;
+}
+.side_menu .menu ul {
+  list-style: none;
+}
+.side_menu .menu li {
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+.side_menu .menu i,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.side_menu .menu i {
+  padding-right: 8px;
+}
+#social_menu i {
+  color: white;
+  opacity: 0.5;
+  left: 40px;
+  position: static;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+#check {
+  display: none;
+}
+.side_menu .menu li:hover {
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+.btn_one:hover {
+  font-size: 40px;
+}
+.btn_two:hover {
+  font-size: 30px;
+}
+#social_menu i:hover {
+  opacity: 1;
+  transform: scale(1.7);
+}
+#check:checked ~ .side_menu {
+  left: 0;
+}
+#check:checked ~ .btn_one i {
+  opacity: 0;
+}
+
+#check:checked ~ .side_menu .btn_two i {
+  opacity: 1;
+}
